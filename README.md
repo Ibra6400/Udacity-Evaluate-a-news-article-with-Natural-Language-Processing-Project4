@@ -20,7 +20,7 @@ API_ID=**************************
 - npm install
 
 **Step 2:  Run the Project**
-to run the project there are two modes development mode and production mode. to test the functions of the project there is test mode. the steps below shows how to run each mode 
+to run the project there are two modes development mode and production mode. to test the functions of the project there is test mode. the steps below shows how to run each mode. using production mode to load the the project style 
 
 **development mode**
 
