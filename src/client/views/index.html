@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Test</title>
-        <!-- <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css"> -->
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>NLP</title>
+  </head>
 
-    <body>
+  <body>
+    <header>
+      <div class="">Udacity</div>
+      <div class="">Project: Evaluate a News Article with NLP</div>
+    </header>
 
-        <header>
-            <div class="">
-                Udacity
-            </div>
-            <div class="">
-                Project: Evaluate a News Article with NLP
-            </div>
-        </header>
+    <main>
+      <h1>What is Sentiment Analysis?</h1>
 
-        <main>
-            <h1>What is Sentiment Analysis?</h1>
+      <p class="description">
+        Sentiment Analysis is MeaningCloud's solution for performing a detailed
+        multilingual sentiment analysis of texts from different sources.
+      </p>
 
-            <p class="description">
-                Sentiment Analysis is MeaningCloud's solution for performing a detailed multilingual sentiment analysis of texts from different sources.
-            </p>
+      <h2>Type in a "URL" to aalyze the sentiment of a URL Content</h2>
 
-            <h2>Type in a "URL" to aalyze the sentiment of a URL Content</h2>
-            
-    
-            <section>
-                <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value=""  placeholder="Enter News Website URL">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
-                </form>
-                <div id="error"></div>
-                
-                <div id="results">
-                   <p><strong>Form Results:</strong></p>
-                   <div id="polarity"> <p>Polarity: </p>  </div>
-                   <div id="agreement"> <p>Agreement: </p>  </div>
-                   <div id="subjectivity"><p>Subjectivity: </p> </div>
-                   <div id="confidence"><p>Confidence: </p>  </div>
-                   <div id="irony"><p>Irony: </p> </div>
+      <section>
+        <form class="" onsubmit="return Client.handleSubmit(event)">
+          <input
+            id="name"
+            type="text"
+            name="input"
+            value=""
+            placeholder="Enter News Website URL"
+          />
+          <input
+            type="submit"
+            name=""
+            value="submit"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return handleSubmit(event)"
+          />
+        </form>
+        <div id="error"></div>
 
-                </div>
-            </section>
+        <div id="results">
+          <p><strong>Form Results:</strong></p>
+          <div id="polarity"><p>Polarity:</p></div>
+          <div id="agreement"><p>Agreement:</p></div>
+          <div id="subjectivity"><p>Subjectivity:</p></div>
+          <div id="confidence"><p>Confidence:</p></div>
+          <div id="irony"><p>Irony:</p></div>
+        </div>
+      </section>
+    </main>
 
-        </main>
-
-        <footer>
-            <p>Project Created for the Udacity FEND &copy; 2020</p>
-        </footer>
-        <script>
-            // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
-                // Use the window load event to keep the page load performant
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service-worker.js');
-                });
-            }
-           </script>
-    </body>
+    <footer>
+      <p>Project Created for the Udacity FEND &copy; 2020</p>
+    </footer>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
 </html>
